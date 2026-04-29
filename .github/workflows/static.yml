@@ -38,6 +38,8 @@ jobs:
         run: |
           npx @marp-team/marp-cli docs/nemo_eda_presentation.md --html --bespoke.osc --allow-local-files -o docs/nemo_eda_presentation.html
           npx @marp-team/marp-cli docs/nemo_eda_presentation.md --allow-local-files -o docs/nemo_eda_presentation.pptx
+          npx @marp-team/marp-cli report_slides.md --html --bespoke.osc --allow-local-files -o report_slides.html
+          npx @marp-team/marp-cli report_slides.md --allow-local-files -o report_slides.pptx
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
