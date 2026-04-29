@@ -36,7 +36,7 @@ jobs:
           node-version: '20'
       - name: Convert Marp Markdown to HTML
         run: |
-          npx @marp-team/marp-cli docs/nemo_eda_presentation.md -o docs/nemo_eda_presentation.html
+          npx @marp-team/marp-cli docs/nemo_eda_presentation.md --html --bespoke.osc -o docs/nemo_eda_presentation.html
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact

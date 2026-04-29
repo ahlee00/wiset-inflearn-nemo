@@ -17,7 +17,7 @@ style: |
   }
   h1 {
     color: #000;
-    font-size: 55px;
+    font-size: 50px;
     text-shadow: 6px 6px 0px #FF2D55;
     border: 5px solid #000;
     background: #fff;
