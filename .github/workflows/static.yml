@@ -34,9 +34,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Convert Marp Markdown to HTML
+      - name: Convert Marp Markdown to HTML and PPTX
         run: |
           npx @marp-team/marp-cli docs/nemo_eda_presentation.md --html --bespoke.osc -o docs/nemo_eda_presentation.html
+          npx @marp-team/marp-cli docs/nemo_eda_presentation.md -o docs/nemo_eda_presentation.pptx
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
